@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div>
+            Amazing Calculator
+        </div>
+        <input id="inputNumber" type="number"></input>
+        <label>-</label>
+        <input id="inputNumberTwo" type="number"></input>
+        <button onclick="operate()">
+            Operate
+        </button>
+        <h1 id="result"></h1>
+
+        <input type="radio" id="sum" name="operation" value="sum">
+        <label for="operation">+</label><br>
+        <input type="radio" id="minus" name="operation" value="minus">
+        <label for="operation">-</label><br>
+        <input type="radio" id="plus" name="operation" value="plus">
+        <label for="operation">*</label><br>
+        <input type="radio" id="division" name="operation" value="division">
+        <label for="operation">/</label>
+
+    </body>
+</html>

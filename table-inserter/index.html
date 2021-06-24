@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/main.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="container" class="container spaced">
+            <h1>Firts Form</h1>
+            <div class="row g-2">
+                <div class="col-md">
+                    <label for="inputName">Name</label>
+                    <input id="inputName" type="text"/>
+                </div>
+                <div class="col-md">
+                    <label for="inputAge">Age</label>
+                    <input id="inputAge" type="number" />
+                </div>
+                <div class="col-md text-end">
+                    <button type="button" 
+                            class="btn btn-success mb-2"
+                            onclick="addUser()"
+                    >
+                        Add +
+                    </button>
+                </div>
+            </div>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <th class="col-2 text-center">Index</th>
+                    <th class="col-5 text-center">Name</th>
+                    <th class="col-5 text-center">Age</th>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
