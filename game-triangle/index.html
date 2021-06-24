@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Amazing triangle</title>
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/main.js"></script>
+    </head>
+    <body>
+		<h1>Amazing triangle drawing</h1>
+        <input id="rows" 
+               type="number" 
+               placeholder="Enter the triangle max size"
+               onchange="checkValue()"
+        />
+        <button onclick="draw()">Draw</button>
+        <div id="result"></div>
+    </body>
+</html>
